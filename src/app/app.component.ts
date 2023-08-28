@@ -50,7 +50,6 @@ export class AppComponent implements AfterViewInit {
       type: 'pie'
     }]
   }]
-
   initECharts(): void {
     const chart = echarts.init(this.echartsContainer.nativeElement);
     chart.setOption(this.options[0]);
