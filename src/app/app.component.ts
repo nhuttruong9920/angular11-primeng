@@ -1,7 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import * as echarts from 'echarts';
-import * as html2canvas from 'html2canvas';
-import * as jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-root',
@@ -51,18 +49,17 @@ export class AppComponent implements AfterViewInit {
       data: [150, 230, 224, 218, 135, 147, 260],
       type: 'pie'
     }]
-  }]
+  }],
+
   initECharts(): void {
     const chart = echarts.init(this.echartsContainer.nativeElement);
     chart.setOption(this.options[0]);
-
   }
 
   exportAllChartOptions(): void {
     for (let i = 0; i < this.options.length; i++) {
       const chart = echarts.init(this.echartsContainer.nativeElement);
       chart.setOption(this.options[i]);
-      console.log(chart)
 
       chart.resize({
         width: 600,
