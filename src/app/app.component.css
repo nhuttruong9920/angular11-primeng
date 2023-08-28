@@ -1,0 +1,135 @@
+::ng-deep .testDialog .p-dialog-header {
+  background-color: #fafafa;
+  border: none;
+  color: red;
+}
+
+::ng-deep .testDialog .p-dialog-header .p-dialog-header-close-icon {
+  color: #f5a65f;
+  border: 0.15rem solid grey;
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+}
+
+/* work */
+:host ::ng-deep .p-calendar .p-datepicker {
+  width: 300px;
+  min-width: unset;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:host ::ng-deep .p-calendar {
+  width: 315px;
+}
+
+:host ::ng-deep .p-datepicker table td {
+  padding: 0;
+}
+
+:host ::ng-deep .p-datepicker table tbody {
+  /* border: 1px solid black; */
+}
+
+:host ::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-prev,
+:host ::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-next {
+  /* display: none; */
+}
+
+:host ::ng-deep .p-datepicker .p-datepicker-header {
+  background-color: white;
+  /* border: none; */
+}
+
+:host ::ng-deep .p-datepicker-header .p-datepicker-title {
+  /* margin: 0;
+display: flex;
+flex-direction: row-reverse; */
+}
+
+/* Sidebar is working */
+::ng-deep .p-menuitem-link-active {
+  background-color: #fed201 !important;
+}
+:host ::ng-deep .menu-icon {
+  width: 24px;
+  height: 24px;
+}
+:host ::ng-deep .dashboard-icon {
+  background: url("/assets/images/dashboard.png");
+}
+
+:host ::ng-deep .vehicle-icon {
+  background: url("/assets/images/monitor.png");
+}
+
+:host
+  ::ng-deep
+  .p-panelmenu
+  .p-panelmenu-panel
+  .p-panelmenu-header
+  .p-panelmenu-icon {
+  order: 0;
+  /* margin-left: 0;
+  margin-right: 0.5rem; */
+}
+
+/* :host
+  ::ng-deep
+  .p-panelmenu
+  .p-panelmenu-panel
+  .p-panelmenu-header
+  .p-panelmenu-icon::before {
+  content: "\f0da";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  font-size: 1rem;
+  color: #ff9900;
+} */
+
+.red-background {
+  color: red !important;
+}
+
+:host ::ng-deep .p-menuitem-link:has(span.p-panelmenu-icon)::after,
+:host ::ng-deep .p-panelmenu-header-link:has(span.p-panelmenu-icon)::after {
+  content: "\e905";
+  font-family: "primeicons";
+  font-weight: 900;
+  font-size: 1rem;
+  color: #ff9900;
+  position: absolute;
+  left: 0.5rem;
+}
+:host
+  ::ng-deep
+  .p-menuitem-link:has(span.p-panelmenu-icon.pi-angle-down)::after,
+:host
+  ::ng-deep
+  .p-panelmenu-header.p-highlight
+  > .p-panelmenu-header-link:has(span.p-panelmenu-icon)::after {
+  content: "\e906";
+  font-family: "primeicons";
+  font-weight: 900;
+  font-size: 1rem;
+  color: #ff9900;
+  position: absolute;
+  left: 0.5rem;
+}
+
+:host ::ng-deep .p-menuitem-link,
+:host ::ng-deep .p-panelmenu-header-link {
+  position: relative;
+}
+
+:host ::ng-deep .p-panelmenu-icon.pi-chevron-down,
+:host ::ng-deep .p-panelmenu-icon.pi-chevron-right,
+:host ::ng-deep .p-panelmenu-icon.pi-angle-down,
+:host ::ng-deep .p-panelmenu-icon.pi-angle-right {
+  display: none;
+}
