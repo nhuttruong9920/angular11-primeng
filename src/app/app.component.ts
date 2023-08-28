@@ -49,7 +49,7 @@ export class AppComponent implements AfterViewInit {
       data: [150, 230, 224, 218, 135, 147, 260],
       type: 'pie'
     }]
-  }],
+  }]
 
   initECharts(): void {
     const chart = echarts.init(this.echartsContainer.nativeElement);
