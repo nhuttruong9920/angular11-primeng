@@ -1,0 +1,8 @@
+:host ::ng-deep a[aria-expanded="true"],
+:host ::ng-deep a[aria-expanded="true"] .p-menuitem-text {
+  color: red !important;
+}
+
+:host ::ng-deep .none a .p-menuitem-text {
+  color: black !important;
+}

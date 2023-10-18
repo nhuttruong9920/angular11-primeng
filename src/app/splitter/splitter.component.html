@@ -1,0 +1,13 @@
+<p-splitter
+  [style]="{ height: '300px' }"
+  [panelSizes]="panelSizes"
+  [panelStyle]="{ 'color': 'red','flex-basis': 'calc(20% - 4px) !important' }"
+>
+  <ng-template pTemplate>
+    <div>Left Panel</div>
+  </ng-template>
+  <ng-template pTemplate>
+    <div>Right Panel</div>
+  </ng-template>
+</p-splitter>
+<button (click)="changePanelRatio()">Change Ratio to 50/50</button>

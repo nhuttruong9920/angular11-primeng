@@ -20,19 +20,39 @@ import { RatingModule } from 'primeng/rating';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { NgxEchartsModule } from 'ngx-echarts';
-
+import { PlainComponent } from './plain/plain.component';
+import { ExportChartsComponent } from './export-charts/export-charts.component';
+import { SwitchComponent } from './switch/switch.component';
+import { InputSwitchModule } from 'primeng/inputswitch';
+import { MapComponent } from './map/map.component';
+import { PrimengPanelmenuComponent } from './primeng-panelmenu/primeng-panelmenu.component';
+import { SplitterComponent } from './splitter/splitter.component';
+import { SplitterModule } from 'primeng/splitter';
+import { PanelModule } from 'primeng/panel';
+import { InputtextComponent } from './inputtext/inputtext.component';
+import { ClickOutsideMenuComponent } from './click-outside-menu/click-outside-menu.component';
+import { ComponentAnimationComponent } from './component-animation/component-animation.component';
 @NgModule({
   declarations: [
     AppComponent,
     LanguageComponent,
     DemoDialogComponent,
-
+    PlainComponent,
+    ExportChartsComponent,
+    SwitchComponent,
+    MapComponent,
+    PrimengPanelmenuComponent,
+    SplitterComponent,
+    InputtextComponent,
+    ClickOutsideMenuComponent,
+    ComponentAnimationComponent,
   ],
   imports: [
     NgxEchartsModule.forRoot({
-      echarts: () => import('echarts')
+      echarts: () => import('echarts'),
     }),
     BreadcrumbModule,
+    InputSwitchModule,
     RatingModule,
     PanelMenuModule,
     CalendarModule,
@@ -45,9 +65,11 @@ import { NgxEchartsModule } from 'ngx-echarts';
     FormsModule,
     DynamicDialogModule,
     BrowserAnimationsModule,
-    DropdownModule
+    DropdownModule,
+    SplitterModule,
+    PanelModule,
   ],
   providers: [DialogService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

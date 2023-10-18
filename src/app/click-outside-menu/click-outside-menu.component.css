@@ -1,0 +1,13 @@
+button{
+  position: relative;
+}
+
+.font-size-menu{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+}

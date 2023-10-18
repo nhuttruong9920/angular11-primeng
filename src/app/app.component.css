@@ -53,7 +53,7 @@ flex-direction: row-reverse; */
 }
 
 /* Sidebar is working */
-::ng-deep .p-menuitem-link-active {
+/* ::ng-deep .p-menuitem-link-active {
   background-color: #fed201 !important;
 }
 :host ::ng-deep .menu-icon {
@@ -66,18 +66,16 @@ flex-direction: row-reverse; */
 
 :host ::ng-deep .vehicle-icon {
   background: url("/assets/images/monitor.png");
-}
+} */
 
-:host
+/* :host
   ::ng-deep
   .p-panelmenu
   .p-panelmenu-panel
   .p-panelmenu-header
   .p-panelmenu-icon {
   order: 0;
-  /* margin-left: 0;
-  margin-right: 0.5rem; */
-}
+} */
 
 /* :host
   ::ng-deep
@@ -92,7 +90,7 @@ flex-direction: row-reverse; */
   color: #ff9900;
 } */
 
-.red-background {
+/* .red-background {
   color: red !important;
 }
 
@@ -133,3 +131,9 @@ flex-direction: row-reverse; */
 :host ::ng-deep .p-panelmenu-icon.pi-angle-right {
   display: none;
 }
+
+
+.chart-container {
+  border: 1px solid black;
+  margin: 10px;
+} */
