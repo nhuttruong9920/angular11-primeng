@@ -32,6 +32,7 @@ import { PanelModule } from 'primeng/panel';
 import { InputtextComponent } from './inputtext/inputtext.component';
 import { ClickOutsideMenuComponent } from './click-outside-menu/click-outside-menu.component';
 import { ComponentAnimationComponent } from './component-animation/component-animation.component';
+import { DemoSplitterComponent } from './demo-splitter/demo-splitter.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +47,7 @@ import { ComponentAnimationComponent } from './component-animation/component-ani
     InputtextComponent,
     ClickOutsideMenuComponent,
     ComponentAnimationComponent,
+    DemoSplitterComponent,
   ],
   imports: [
     NgxEchartsModule.forRoot({
@@ -71,5 +73,5 @@ import { ComponentAnimationComponent } from './component-animation/component-ani
   ],
   providers: [DialogService],
   bootstrap: [AppComponent],
-})
+},)
 export class AppModule {}

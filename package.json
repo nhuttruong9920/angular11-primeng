@@ -23,6 +23,7 @@
     "@geoman-io/leaflet-geoman-free": "^2.14.2",
     "@types/echarts": "^4.9.8",
     "@types/file-saver": "^2.0.5",
+    "angular-split": "^5.0.0",
     "echarts": "^5.1.2",
     "exceljs": "^4.3.0",
     "file-saver": "^2.0.5",
