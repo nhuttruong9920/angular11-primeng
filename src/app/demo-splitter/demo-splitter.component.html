@@ -1,1 +1,12 @@
-<p>demo-splitter works!</p>
+<div style="width: 100%; height: 500px; background: yellow;">
+  <as-split direction="horizontal"  [useTransition]="true">
+    <as-split-area [size]="70" [visible]="leftOpened" [order]="0">
+      <p>LEFT</p>
+    </as-split-area>
+    <as-split-area [size]="30" [order]="1">
+    <p>RIGHT</p>
+    </as-split-area>
+  </as-split>
+</div>
+<button (click)="onLeft()">Left</button>
+<button (click)="onRight()">Right</button>

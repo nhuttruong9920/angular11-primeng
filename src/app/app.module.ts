@@ -33,6 +33,7 @@ import { InputtextComponent } from './inputtext/inputtext.component';
 import { ClickOutsideMenuComponent } from './click-outside-menu/click-outside-menu.component';
 import { ComponentAnimationComponent } from './component-animation/component-animation.component';
 import { DemoSplitterComponent } from './demo-splitter/demo-splitter.component';
+import { AngularSplitModule } from 'angular-split';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +54,7 @@ import { DemoSplitterComponent } from './demo-splitter/demo-splitter.component';
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts'),
     }),
+    AngularSplitModule,
     BreadcrumbModule,
     InputSwitchModule,
     RatingModule,
@@ -73,5 +75,5 @@ import { DemoSplitterComponent } from './demo-splitter/demo-splitter.component';
   ],
   providers: [DialogService],
   bootstrap: [AppComponent],
-},)
+})
 export class AppModule {}
